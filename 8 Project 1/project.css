@@ -1,0 +1,27 @@
+body{
+	background-color: blue;
+	color: white;
+	border-left: 50px solid green;
+	border-right: 50px solid green;
+	border-bottom: 50px solid green;
+	margin: 0px;
+	text-align: center;
+	/*padding: 20%;*/
+}
+
+#lo{
+	padding: 5%;
+}
+
+input{
+	width: 300px;
+	height: 40px;
+}
+
+#id3{
+	background-color: orange;
+	width: 150px;
+	height: 60px;
+	border-radius: 25px;
+	margin-bottom: 10px;
+}

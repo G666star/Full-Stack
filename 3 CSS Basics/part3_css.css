@@ -1,0 +1,25 @@
+.fstdiv{
+	color: green;
+}
+
+.snddiv{
+	color: orange;
+}
+
+#id1{
+	color: red;
+	text-decoration: overline;
+}
+
+h3 + ul{
+	border: 3px solid violet;
+}
+
+li a{
+	color: red;
+}
+
+li a[href='part3_link1.html']{
+	color: blue;
+	border: 4px dotted green;
+}

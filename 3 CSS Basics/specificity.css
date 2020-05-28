@@ -1,0 +1,15 @@
+li{
+	color: blue;
+}
+
+.frst{
+	color: green;
+	text-decoration: line-through;
+}
+
+#id2{
+	color: red;
+	border: 3px dotted purple;
+	text-decoration: none; 
+	/*hve to give a new text text-decoration: coz same class has it*/
+}

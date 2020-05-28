@@ -1,0 +1,20 @@
+#id2{
+	border: 3px solid red;
+	
+	width: 20%;
+	/*width is 20% of the browser*/
+	
+	text-align: center;
+	/*text align w.r.t the border*/
+	
+	margin: 50px 20px 1px 100px;
+	/*top right bottom left*/ 
+	/*if selected auto it aligns to centre*/
+}
+
+#id1{
+	border: 10px solid green;
+	width: 50%;
+	padding: 30px;
+	text-align: center;
+}

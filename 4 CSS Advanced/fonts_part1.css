@@ -1,0 +1,27 @@
+h1{
+	font-family: 'Pacifico', cursive;
+}
+
+p{
+	font-family: cursive;
+}
+
+body{
+	font-size: 20px;
+	/*default is 16px*/
+	/*1em = 16px*/
+}
+
+#idp{
+	font-size: 2em;
+	/*em is called, based on the px of the body*/
+}
+
+p{
+	font-style: oblique;
+	font-weight: bold;
+}
+
+h1, #idp{
+	text-align: center;
+}
