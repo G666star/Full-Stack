@@ -1,0 +1,14 @@
+{% extends 'app5_temp/base.html' %}
+
+{% block content %}
+
+<h1>Delete {{zenga_del.Name}}?</h1>
+
+<form method="POST">
+  {% csrf_token %}
+  <input type="submit" class="btn btn-danger" value="Confirm">
+  <a class="btn btn-dark" href="{% url 'cbv:detail' pk=zenga_del.pk %} ">Cancel</a>
+
+</form>
+
+{% endblock %}

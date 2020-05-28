@@ -1,0 +1,30 @@
+{% extends 'app5_temp/base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1>Welcome to the Skooooolss Detail Page</h1>
+    <h2>jhinga Details:</h2>
+    <p>Id_num: {{jhinga_detail.id}}</p>
+    <p>Name: {{jhinga_detail.Name}}</p>
+    <!-- it will be jhinga_detail.Name and not jhinga_detail.name -->
+    <p>Principal: {{jhinga_detail.Dean}}</p>
+    <!-- it will be jhinga_detail.Dean and not jhinga_detail.principal check exact variables assigned in model.py -->
+    <p>Location: {{jhinga_detail.Location}}</p>
+    <h3>Students:</h3>
+
+      {% for balak in jhinga_detail.sisya.all %}
+      <!-- name 'sisya' is borrowed from .models Student   -->
+        <p>{{balak.Name}} who is {{balak.Age}} years old. and hve id {{balak.id}}</p>
+      {% endfor %}
+
+  </div>
+
+  <div class="container">
+    <p>
+      <a class='btn btn-warning' href="{% url 'cbv:thik' pk=jhinga_detail.pk %}">Update</a>
+      <a class='btn btn-danger' href="{% url 'cbv:khatam' pk=jhinga_detail.pk %}">Delete</a>
+    </p>
+
+
+  </div>
+{% endblock %}
